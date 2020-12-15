@@ -7,11 +7,11 @@ export default class Controller {
 		this.model = new Model();
 
 		this.updateTodoListModel(this.model.todoList);
-		this.handleAddTodo();
+		this.handleAddTodoView();
 	}
 
 	updateTodoListModel = () => {
-		this.model.bindUpdateTodoList(this.updateTodoList);
+		this.model.bindUpdateTodoList(this.updateTodoListView);
 	}
 
 	updateTodoListView = () => {
@@ -20,11 +20,11 @@ export default class Controller {
 	}
 
 	handleAddTodoView = () => {
-		this.view.bindAddTodo(this.addTodo);
+		this.view.bindAddTodo(this.addTodoModel);
 	}
 
 	handleRemoveTodoView = () => {
-		this.view.bindRemoveTodo(this.removeTodo);
+		this.view.bindRemoveTodo(this.removeTodoModel);
 	}
 
 	addTodoModel = todo => {
