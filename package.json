@@ -1,0 +1,11 @@
+{
+  "name": "mvcpractice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Byeonguk Yoo <bwyoo1229@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-plugin-react": "^7.22.0"
+  }
+}
